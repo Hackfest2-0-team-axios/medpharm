@@ -1,0 +1,34 @@
+.user_container {
+  font-family: 'Poppins', sans-serif;
+}
+
+.reg_img_container {
+  background: url('../../Assets/Images/regImage.svg') no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 50%;
+}
+
+.form_container {
+  width: 50%;
+  padding: 8rem;
+}
+
+@media (max-width: 992px) {
+  .reg_img_container {
+    width: 100%;
+    display: none;
+  }
+  .form_container {
+    width: 100%;
+    padding: 5rem;
+    background: url('../../Assets/Images/regImage.svg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100vh;
+  }
+}

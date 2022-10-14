@@ -1,0 +1,39 @@
+.stories_array {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 1rem;
+}
+.stories_array img {
+  margin-right: 1.2rem;
+}
+
+.stories_header {
+  font-family: Lateef;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  color: #303030;
+}
+
+.stories_array::-webkit-scrollbar {
+  /* width: 5px; */
+  background-color: #eeeeee;
+  border-radius: 10px;
+  height: 5px;
+}
+
+.stories_array::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+}
+
+.stories_array span {
+  position: relative;
+  cursor: pointer;
+}
+.add_icon {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+}

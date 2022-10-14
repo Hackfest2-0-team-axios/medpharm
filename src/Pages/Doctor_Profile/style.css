@@ -1,0 +1,88 @@
+.doctor_profile_container {
+  padding: 2rem 2rem 0;
+}
+
+.doc_profile_actions {
+  color: #1F72EE;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.doc_profile {
+  width: 100%;
+}
+
+.doc_profile .caption {
+  text-align: left;
+}
+
+.doc_profile_actions *:hover {
+  cursor: pointer;
+}
+
+.follow {
+  width: 11.9rem;
+  height: 3.7rem;
+  border: 1px solid #1F72EE;
+  box-sizing: border-box;
+  border-radius: 20px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 3rem;
+  color: #1F72EE;
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+
+.doc_chat {
+  font-size: 4rem;
+  font-weight: lighter;
+}
+
+.follow:hover {
+  color: #ffff;
+}
+
+.consult_btn {
+  width: 24rem;
+  height: 5rem;
+  background: #1F72EE;
+  border-radius: 15px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: #FFFFFF;
+}
+
+.doc_img_container {
+  margin-right: 2rem;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  height: 120vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.postsr::-webkit-scrollbar {
+  width: 5px;
+  background-color: #e8e2e2;
+  border-radius: 10px
+}
+
+.posts::-webkit-scrollbar-thumb {
+  /* background-color: blue; */
+  background-color: #e8e2e2!important;
+  border-radius: 8px;
+  width: 10px;
+}
+
+.post {
+  cursor: pointer;
+}

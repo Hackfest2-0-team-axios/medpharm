@@ -1,0 +1,141 @@
+.apppintments_container {
+  background: #D3D6D5;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: normal;
+  color: #000000;
+}
+
+;
+.calender_title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.2rem!important;
+  line-height: 3.5rem;
+  color: #000000;
+}
+
+.date {
+  /* margin-b+ottom:  */
+}
+
+.duration {
+  margin-top: auto;
+}
+
+.date span {
+  background: #fff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #000000;
+  margin-right: .5rem;
+}
+
+.span_2 {
+  grid-row-start: span 2;
+}
+.span_3 {
+  grid-row-start: span 5;
+}
+
+.date .cal_icon {
+  padding: .3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.date .cal_icon:hover {
+  background: rgb(253, 253, 253);
+}
+
+#calender {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 5rem repeat(8, 1fr);
+  /* grid-template-rows: 3rem 7rem repeat(2, 3rem) 7rem repeat(2, 3rem) repeat(4 7rem); */
+  grid-template-rows: 4rem repeat(10, 1fr);
+  /* grid-auto-rows: 3rem; */
+  background-color: inherit;
+}
+
+#calender * {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  border-right: 1px solid rgba(0, 0, 0, 0.5);
+  border-left: none;
+}
+
+.date_header {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #000000;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+.time {
+  display: flex;
+  align-items: flex-start;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #000000;
+}
+
+.date_header.current {
+  color: #1F72EE;
+}
+
+.date_header.current span {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #1F72EE;
+  border: #1F72EE;
+  margin-right: .5rem;
+}
+
+.date_header.sun {
+  color: #BE1A1A;
+}
+
+.appt {
+  background: #fff;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bd_none {
+  border: none!important;
+}
+
+.bd_blue {
+  border-top: 5px solid #1F72EE;
+}
+.bd_green {
+  border-top: 5px solid #4CAF50;
+}
+.bd_red{
+  border-top: 5px solid #BE1A1A;
+}
+.bd_yellow {
+  border-top: 5px solid #FFC107;
+}
