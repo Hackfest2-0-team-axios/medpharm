@@ -11,7 +11,7 @@ export default function Login() {
   const handleChange = ({ target }) => {
     setControl({
       ...control,
-      [target.name]: target.email
+      [target.name]: target.email,
     });
   };
 
@@ -22,8 +22,8 @@ export default function Login() {
       method: "POST",
       body: JSON.stringify(control),
       headers: {
-        "Content-Type": "application/json"
-      }
+        "Content-Type": "application/json",
+      },
     })
       .then((res) => res.json())
       .then((data) => {
