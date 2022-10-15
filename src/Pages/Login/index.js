@@ -67,9 +67,6 @@ export default function Login() {
               placeholder="Please enter your password"
             />
           </Form.Group>
-          <Link to="/forgot_password" className="text my-3">
-            Forgot Password?
-          </Link>
 
           <Button
             className="w-100 form_btn d-flex justify-content-center align-items-center"
