@@ -50,7 +50,7 @@ export default function SideBar({ type = "client" }) {
             <>
               <NavLink to="/news_feed" className="nav_link">
                 <img src={Feed} alt="_feed_" />
-                <span>Feed</span>
+                <span>News Feed</span>
               </NavLink>
               <NavLink to="/pharmacies" className="nav_link">
                 <img src={Pharm} alt="_pharmacies_" />
@@ -83,10 +83,6 @@ export default function SideBar({ type = "client" }) {
               <NavLink to="/manage_items" className="nav_link">
                 <img src={Manage} alt="manage" />
                 <span>Manage Items</span>
-              </NavLink>
-              <NavLink to="/orders" className="nav_link">
-                <img src={Orders} alt="orders" />
-                <span>Orders</span>
               </NavLink>
               <NavLink to="/settings" className="nav_link">
                 <img src={Settings} alt="_settings_" />
