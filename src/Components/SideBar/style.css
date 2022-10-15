@@ -1,0 +1,57 @@
+.sidebar_container {
+  background-color: #fff;
+  padding-bottom: 2rem;
+}
+
+.profile .img_container img {
+  vertical-align: middle;
+}
+
+.name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 4.0rem;
+  color: #000000;
+}
+
+.caption {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  text-align: center;
+  color: #000000;
+}
+
+.side_nav {
+  margin-top: 2.5rem;
+  padding: 2rem;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 1.9rem;
+}
+
+.side_nav .nav_link {
+  color: #303030;
+  display: flex;
+  align-items: center;
+  margin: .5rem;
+}
+.side_nav .nav_link:hover, .logout:hover  {
+  color: #0e0e0e;
+  font-weight: 600;
+}
+.side_nav .nav_link img {
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+.logout {
+  margin: 10rem .5rem 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 1.9rem;
+  cursor: pointer;
+}

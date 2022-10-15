@@ -1,0 +1,61 @@
+.header {
+  background: #CCDDE2;
+  padding: 1.5rem 6rem;
+  position: relative;
+  z-index: 10;
+}
+
+.logo {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 3rem;
+  color: #1F72EE!important;
+}
+
+.nav-link {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 19px;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  color: #303030!important;
+  cursor: pointer;
+}
+
+.me-auto {
+  padding: .8rem 5rem;
+  align-items: center;
+}
+
+.me-auto .nav-link {
+  cursor: pointer;
+}
+@media (min-width: 992px) {
+  .navbar-collapse .collapse {
+    position: relative;
+  }
+  .me-auto {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .me-auto .header-link, .me-auto .dropdown {
+    margin-right: 2rem!important;
+  }
+}
+
+.custom-btn {
+  width: 18rem;
+  height: 4.5rem;
+  background: #1F72EE;
+  border-radius: 3rem;
+  color: #CCDDE2;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+}

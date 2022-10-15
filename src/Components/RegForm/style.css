@@ -1,0 +1,131 @@
+form {
+  font-family: 'Poppins', sans-serif;
+}
+
+label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.form_group {
+  margin: 2.5rem 0;
+}
+
+.custom-input, .custom-input:focus, .custom-input:focus-within {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px 30px;
+  border: 1px solid #1F72EE;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+}
+
+.custom-input::placeholder {
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  color: rgba(48, 48, 48, 0.53);
+}
+
+p.faded {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.t_and_c_container {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  color: #303030;
+}
+
+.t_and_c_container span {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.form_btn {
+  height: 7rem;
+  background: #1F72EE;
+  border-radius: 5px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+form a {
+  color: #1F72EE!important;
+}
+
+form .btn {
+  color: #fff!important;
+}
+
+.text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  color: #303030;
+}
+
+.blue {
+  color: #1F72EE;
+}
+
+.form_title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3.6rem;
+  line-height: 5.2rem;
+  color: #303030;
+}
+
+@media (max-width: 992px) {
+  form {
+    background-color: #fff;
+    border-radius: 2rem;
+    padding:2.5rem; 
+  }
+  .form_title {
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+  }
+  .form_group {
+    margin: 1.5rem 0;
+  }
+  .custom-input, .custom-input:focus, .custom-input:focus-within {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+  .text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .form_btn {
+    height: 4rem;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+  .t_and_c_container {
+    font-size: 1.5rem;
+  }
+  .t_and_c_container span {
+    
+  }
+}

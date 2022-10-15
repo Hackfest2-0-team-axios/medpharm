@@ -1,0 +1,68 @@
+.feed_post_container {
+  background: #fff;
+  height: 120vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.feed {
+  padding: 2rem;
+  width: 80%;
+  margin-bottom: 2rem;
+}
+
+.feed_post_container::-webkit-scrollbar {
+  width: 5px;
+  background-color: #e8e2e2;
+  border-radius: 10px
+}
+
+.feed_post_container::-webkit-scrollbar-thumb {
+  /* background-color: blue; */
+  background-color: #e8e2e2!important;
+  border-radius: 8px;
+  width: 10px;
+}
+
+.feed_profile * {
+  cursor: pointer;
+}
+
+.feed_profile img {
+  margin-right: 2rem;
+}
+
+.feed_profile span {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.7rem;
+  line-height: 4rem;
+  color: #000000;
+}
+
+.feed_img {
+  margin-bottom: 2rem;
+}
+
+.feed_img img {
+  width: 100%;
+}
+
+.feed_text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.2rem;
+  line-height: 3.0rem;
+  color: #000000;
+}
+
+.actions * {
+  font-size: 2.9rem;
+  font-weight: 500;
+  margin-right: 2.5rem;
+  opacity: .75;
+}
+.actions *:hover {
+  opacity: 1;
+  cursor: pointer;
+}

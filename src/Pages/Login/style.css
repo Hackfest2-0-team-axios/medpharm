@@ -1,0 +1,51 @@
+.login_img_container {
+  width: 50%;
+  position: relative;
+}
+
+.login_img_container img {
+  width: 100%;
+  height: auto;
+}
+
+.text {
+  color: #303030CC!important;
+}
+
+.login_form_container {
+  width: 50%;
+  padding: 8rem;
+}
+
+@media (min-width: 992px) {
+  .login_form_container .btn {
+    margin-top: 10rem;
+    color: #fff!important;
+  }
+}
+
+@media (max-width: 992px) {
+  .login_img_container {
+    width: 100%;
+    display: none;
+  }
+  .login_form_container {
+    width: 100%;
+    padding: 5rem;
+    background: url('../../Assets/Images/loginImg.svg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100vh;
+  }
+  .login_form_container .btn {
+    margin-top: 5rem;
+    color: #fff!important;
+  }
+}
+
+.fixed {
+  position: absolute;
+  z-index: 1;
+}

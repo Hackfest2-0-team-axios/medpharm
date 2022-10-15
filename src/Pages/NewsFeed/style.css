@@ -1,0 +1,22 @@
+.feed_container {
+  background-color: #D3D6D5;
+  padding: 0rem 4rem 0;
+}
+
+.feed_container main {
+  column-gap: 5rem;
+}
+
+.side_wrapper {
+  width: 25%;
+  height: 100%;
+}
+
+.feed_wrapper {
+  padding-top: 2rem;
+  padding-left: 4rem;
+}
+.main_wrapper {
+  width: 75%;
+  background-color: #fff;
+}
