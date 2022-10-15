@@ -12,7 +12,8 @@ from django.contrib import auth
 
 class SignUpSerializer(serializers.Serializer):
     email = serializers.EmailField(min_length = 3)
-    phonenumber = serializers.IntegerField()
+    first_name = serializers.CharField(max_length=15)
+    last_name = serializers.CharField(max_length=15)
     password = serializers.CharField(min_length = 8)
 
 class LoginSerializer(serializers.ModelSerializer):
