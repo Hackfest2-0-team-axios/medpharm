@@ -20,3 +20,22 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
 
     def __str__(self):
         return self.email
+
+    def tokens(self):
+        refresh = RefreshToken.for_user(self)
+        return{
+            'refresh':str(refresh),
+            'access':str(refresh.access_token)
+        } 
+
+
+
+class Jwt(models.Model):
+    user = models.OneToOneField(CustomUser,related_name = 'login_user',on_delete = models.CASCADE)
+    access = models.TextField()
+    refresh = models.TextField()
+    created_at = models.DateTimeField(auto_now_add= True)
+    updated_at = models.DateTimeField(auto_now= True)
+
+    def __str__(self):
+        return self.user.email
