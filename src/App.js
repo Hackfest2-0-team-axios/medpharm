@@ -24,23 +24,23 @@ function App() {
         <Route path="/register_as_pharmacy" component={RegisterAsPharmacy} />
         <Route path="/login" component={Login} />
         <NewsFeed>
-            <Switch>
-              <Route
-                path="/news_feed"
-                component={() => (
-                  <div className="feed_wrapper">
-                    <Stories />
-                    <Feed />
-                  </div>
-                )}
-              />
-              <Route path="/doctor_profile" render={Doctor_Profile} />
-              <Route path="/appointments" render={Appointments} />
-              <Route path="/pharmacies" />
-              <Route path="/upload_item" />
-              <Route path="/settings" />
-              <Route path="/orders" />
-            </Switch>
+          <Switch>
+            <Route
+              path="/news_feed"
+              component={() => (
+                <div className="feed_wrapper">
+                  <Stories />
+                  <Feed />
+                </div>
+              )}
+            />
+            <Route path="/doctor_profile" component={Doctor_Profile} />
+            <Route path="/appointments" component={Appointments} />
+            <Route path="/pharmacies" />
+            <Route path="/upload_item" />
+            <Route path="/settings" />
+            <Route path="/orders" />
+          </Switch>
         </NewsFeed>
       </Switch>
     </Router>

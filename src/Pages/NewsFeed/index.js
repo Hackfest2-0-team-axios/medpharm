@@ -4,7 +4,6 @@ import FeadHeader from "../../Components/FeedHeader";
 import SideBar from "../../Components/SideBar";
 import Stories from "../../Components/Stories";
 import "./style.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 export default function NewsFeed({ children }) {
   return (
