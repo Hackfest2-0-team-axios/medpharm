@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar, Nav, Button, Container, NavDropdown } from "react-bootstrap";
-import Hero from "../../Components/Hero.";
+import Hero from "../../Components/Hero";
 // import WhatWeOffer from "../../Components/WhatWeOffer/index";
 import './style.css';
 

@@ -3,7 +3,7 @@
 }
 
 .doc_profile_actions {
-  color: #1F72EE;
+  color: #1f72ee;
   font-style: normal;
   font-weight: normal;
   font-size: 2rem;
@@ -25,13 +25,13 @@
 .follow {
   width: 11.9rem;
   height: 3.7rem;
-  border: 1px solid #1F72EE;
+  border: 1px solid #1f72ee;
   box-sizing: border-box;
   border-radius: 20px;
   font-style: normal;
   font-weight: normal;
   line-height: 3rem;
-  color: #1F72EE;
+  color: #1f72ee;
   font-size: 2rem;
   margin-right: 2rem;
 }
@@ -46,15 +46,15 @@
 }
 
 .consult_btn {
-  width: 24rem;
+  width: 20rem;
   height: 5rem;
-  background: #1F72EE;
+  background: #1f72ee;
   border-radius: 15px;
   font-style: normal;
   font-weight: 600;
-  font-size: 2rem;
-  line-height: 3rem;
-  color: #FFFFFF;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #ffffff;
 }
 
 .doc_img_container {
@@ -73,12 +73,12 @@
 .postsr::-webkit-scrollbar {
   width: 5px;
   background-color: #e8e2e2;
-  border-radius: 10px
+  border-radius: 10px;
 }
 
 .posts::-webkit-scrollbar-thumb {
   /* background-color: blue; */
-  background-color: #e8e2e2!important;
+  background-color: #e8e2e2 !important;
   border-radius: 8px;
   width: 10px;
 }

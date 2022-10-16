@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import ProfileImg from "../../Assets/Images/profileImg.svg";
 import pharm from "../../Assets/Images/pharms/profileimg1.svg";
@@ -14,7 +14,20 @@ import Manage from "../../Assets/Icons/manage.svg";
 import Orders from "../../Assets/Icons/orders.svg";
 import "./style.css";
 
+import { auth,  } from "../../firebase-config";
+import { onAuthStateChanged, signOut } from "firebase/auth";
+
 export default function SideBar({ type = "client" }) {
+  const [user, setUser] = useState({});
+
+
+  onAuthStateChanged(auth, (currentUser) => {
+    setUser(currentUser);
+  })
+  const logout = async () => {
+    await signOut(auth)
+  };
+
   return (
     <div className="sidebar_container">
       <div className="profile p-4">
@@ -30,9 +43,9 @@ export default function SideBar({ type = "client" }) {
         <div>
           <p className="name text-center">
             {type === "client"
-              ? "Tracy Godwin"
+              ? user?.email
               : type === "doctor"
-              ? "Dr Caleb Moren"
+              ? user?.email
               : "HealthPlus Pharmacy"}
           </p>
           <p className="caption text-center">
@@ -100,7 +113,7 @@ export default function SideBar({ type = "client" }) {
           )}
           <div className="logout">
             <img src={Logout} alt="_logout_" style={{ marginRight: "1rem" }} />
-            <span>Logout</span>
+            <span onClick={logout}>Logout</span>
           </div>
         </nav>
       </div>
