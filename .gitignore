@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 .env
 /node_modules
+=======
+/node_modules
+.env
+>>>>>>> 9f9d163 (created authentication for users and doctors)

@@ -2,37 +2,32 @@ import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import LoginImg from "../../Assets/Images/loginImg.svg";
 import { Link, useHistory } from "react-router-dom";
+import { signInWithEmailAndPassword } from "firebase/auth";
 import "./style.css";
+import { auth } from "../../firebase-config"
 
 export default function Login() {
-  const [control, setControl] = useState();
+
+  const [loginEmail, setLoginEmail] = useState("");
+  const [loginPassword, setLoginPassword] = useState("");
   const history = useHistory();
 
-  const handleChange = ({ target }) => {
-    setControl({
-      ...control,
-      [target.name]: target.email
-    });
+
+  const loginUser = async () => {
+
+  
+      try {
+        const users = await signInWithEmailAndPassword(auth, loginEmail, loginPassword);
+        console.log(users)
+        history('/news-feed');
+      } catch (error) {
+        console.log(error)
+      }
+      
+  
+
   };
 
-  const login = () => {
-    console.log(control);
-    const endpoint = "https://medphar.000webhostapp.com/api/login.php";
-    fetch(endpoint, {
-      method: "POST",
-      body: JSON.stringify(control),
-      headers: {
-        "Content-Type": "application/json"
-      }
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-        alert(`Logged in successful`);
-        history.push("/news_feed");
-      })
-      .catch((err) => alert("An error occured, please try again."));
-  };
 
   return (
     <div className="login_container d-flex">
@@ -50,7 +45,7 @@ export default function Login() {
           <Form.Group className="form_group">
             <Form.Label>Email</Form.Label>
             <Form.Control
-              onChange={handleChange}
+              onChange={(event) => setLoginEmail(event.target.value)}
               type="email"
               name="email"
               className="w-100 custom-input"
@@ -60,7 +55,7 @@ export default function Login() {
           <Form.Group className="form_group">
             <Form.Label>Password</Form.Label>
             <Form.Control
-              onChange={handleChange}
+              onChange={(event) => setLoginPassword(event.target.value)}
               type="password"
               name="password"
               className="w-100 custom-input"
@@ -75,7 +70,7 @@ export default function Login() {
             className="w-100 form_btn d-flex justify-content-center align-items-center"
             href="/news_feed"
             form="login"
-            onClick={login}
+            onClick={loginUser}
           >
             Login
           </Button>
