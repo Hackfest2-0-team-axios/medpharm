@@ -38,7 +38,7 @@ export default function Meeting() {
         </div>
       </div>
 
-      <div className="p-2" style={{ width: "100vw", height: "100vh" }}>
+      <div className="" style={{ width: "100vw", height: "90vh" }}>
         <Iframe
           url="https://video-app-3980-8336-dev.twil.io?passcode=21563139808336"
           width="100%"
