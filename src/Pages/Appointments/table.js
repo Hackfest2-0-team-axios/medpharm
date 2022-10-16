@@ -52,8 +52,8 @@ const rows = [
     "I'm having runny nose and constant haedaches. My body feels weak and I'm always tired. This has been going on for 2 weeks."
   ),
   createData(
-    "Peterson Albert",
-    "petersonalbert@swayhealth.com",
+    "John Donald",
+    "johndonal@healthplus.com",
     "18 October 2022",
     "12:00PM WAT",
     "30Mins",
@@ -61,8 +61,8 @@ const rows = [
     "I'm having runny nose and constant haedaches. My body feels weak and I'm always tired. This has been going on for 2 weeks."
   ),
   createData(
-    "Matthew Williams",
-    "matthew.williams@schneiderheath.com",
+    "John Donald",
+    "johndonal@healthplus.com",
     "19 October 2022",
     "9:00AM WAT",
     "30Mins",
@@ -70,8 +70,8 @@ const rows = [
     "I'm having runny nose and constant haedaches. My body feels weak and I'm always tired. This has been going on for 2 weeks."
   ),
   createData(
-    "MacPherson Einstein",
-    "m.einstein@googleplus.com",
+    "John Donald",
+    "johndonal@healthplus.com",
     "20 October 2022",
     "9:00AM WAT",
     "30Mins",
@@ -79,8 +79,8 @@ const rows = [
     "I'm having runny nose and constant haedaches. My body feels weak and I'm always tired. This has been going on for 2 weeks."
   ),
   createData(
-    "Tim Heisenberg",
-    "timheisenberg@splizer.com",
+    "John Donald",
+    "johndonal@healthplus.com",
     "22 October 2022",
     "10:00AM WAT",
     "1Hour",

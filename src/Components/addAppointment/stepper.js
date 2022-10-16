@@ -48,7 +48,7 @@ export default function Steps({ handleBook }) {
           <StepLabel
             optional={
               duration && activeStep > 0 ? (
-                <Typography variant="caption">{duration}</Typography>
+                <p variant="caption">{duration}</p>
               ) : null
             }
           >
@@ -57,14 +57,14 @@ export default function Steps({ handleBook }) {
           <StepContent>
             <Box sx={{}}>
               <div className="inner_box">
-                <span class="add_consultation_icon">
+                <span className="add_consultation_icon">
                   <AddIcon />
                 </span>
                 <select
                   defaultValue={date}
                   onChange={({ target }) => setDuration(target.value)}
                   placeholder="Add duration"
-                  class="add_duration"
+                  className="add_duration"
                 >
                   <option value="">Add duration</option>
                   <option value="30Mins">30Mins</option>
@@ -85,15 +85,14 @@ export default function Steps({ handleBook }) {
             </Box>
           </StepContent>
         </Step>
-        <Step
-          sx={{}}
-          optional={
-            details && activeStep > 1 ? (
-              <Typography variant="caption">{details}</Typography>
-            ) : null
-          }
-        >
-          <StepLabel optional={""}>
+        <Step sx={{}}>
+          <StepLabel
+            optional={
+              details && activeStep > 1 ? (
+                <p variant="caption">{details}</p>
+              ) : null
+            }
+          >
             <h3>Add details</h3>
           </StepLabel>
           <StepContent>

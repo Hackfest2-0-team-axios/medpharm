@@ -42,57 +42,58 @@ export default function SideBar({ type = "client" }) {
               ? "I use story telling to create a healthier Africa"
               : "Healthplus, Nigeria’s integrated pharmacy and health provider across the country."}
           </p>
+          <p className="role">Role: {type.toLocaleUpperCase()}</p>
         </div>
       </div>
       <div className="">
         <nav className="side_nav d-flex flex-column">
           {type !== "pharmacy" ? (
-            <>
+            <div>
               <NavLink to="/news_feed" className="nav_link">
                 <img src={Feed} alt="_feed_" />
                 <span>News Feed</span>
-              </NavLink>
-              <NavLink to="/pharmacies" className="nav_link">
-                <img src={Pharm} alt="_pharmacies_" />
-                <span>Pharmacies</span>
               </NavLink>
               <NavLink to="/appointments" className="nav_link">
                 <img src={Apps} alt="_appointmens_" />
                 <span>Appointments</span>
               </NavLink>
-              <NavLink to="/cart" className="nav_link">
+              {/* <NavLink to="/pharmacies" className="nav_link">
+                <img src={Pharm} alt="_pharmacies_" />
+                <span>Pharmacies</span>
+              </NavLink> */}
+              {/* <NavLink to="/cart" className="nav_link">
                 <img src={Cart} alt="_cart_" />
                 <span>Cart</span>
-              </NavLink>
-              <NavLink to="/settings" className="nav_link">
+              </NavLink> */}
+              {/* <NavLink to="/settings" className="nav_link">
                 <img src={Settings} alt="_settings_" />
                 <span>Settings</span>
-              </NavLink>
-            </>
+              </NavLink> */}
+            </div>
           ) : (
-            <>
+            <div>
               <NavLink to="/news_feed" className="nav_link">
                 <img src={Feed} alt="_feed_" />
                 <span>Feed</span>
               </NavLink>
-              <NavLink to="/upload_item" className="nav_link">
+              {/* <NavLink to="/upload_item" className="nav_link">
                 <img src={Upload} alt="upload" />
                 <span>Uplaod Item</span>
-              </NavLink>
+              </NavLink> */}
 
-              <NavLink to="/manage_items" className="nav_link">
+              {/* <NavLink to="/manage_items" className="nav_link">
                 <img src={Manage} alt="manage" />
                 <span>Manage Items</span>
-              </NavLink>
-              <NavLink to="/settings" className="nav_link">
+              </NavLink> */}
+              {/* <NavLink to="/settings" className="nav_link">
                 <img src={Settings} alt="_settings_" />
                 <span>Settings</span>
-              </NavLink>
-              <NavLink to="/pharmacies" className="nav_link">
+              </NavLink> */}
+              {/* <NavLink to="/pharmacies" className="nav_link">
                 <img src={Pharm} alt="_pharmacies_" />
                 <span>Pharmacies</span>
-              </NavLink>
-            </>
+              </NavLink> */}
+            </div>
           )}
           <div className="logout">
             <img src={Logout} alt="_logout_" style={{ marginRight: "1rem" }} />

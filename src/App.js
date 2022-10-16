@@ -12,6 +12,7 @@ import Appointments from "./Pages/Appointments";
 import Doctor_Profile from "./Pages/Doctor_Profile";
 import Stories from "./Components/Stories";
 import Feed from "./Components/Feed";
+import Meeting from "./Pages/Meeting";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/register_as_doctor" component={RegisterAsDoctor} />
         <Route path="/register_as_pharmacy" component={RegisterAsPharmacy} />
         <Route path="/login" component={Login} />
+        <Route path="/meeting" component={Meeting} />
         <NewsFeed>
           <Switch>
             <Route

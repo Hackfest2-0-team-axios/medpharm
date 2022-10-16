@@ -10,9 +10,9 @@ export default function NewsFeed({ children }) {
     <div className="feed_container">
       <FeadHeader />
       <main className="d-flex">
-        <section className="side_wrapper">
+        <aside className="side_wrapper">
           <SideBar />
-        </section>
+        </aside>
         <section className="main_wrapper">{children}</section>
       </main>
     </div>

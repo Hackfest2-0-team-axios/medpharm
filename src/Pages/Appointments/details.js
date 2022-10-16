@@ -8,6 +8,7 @@ import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
 import Typography from "@mui/material/Typography";
 import DocImage from "../../Assets/Images/profileImg.svg";
+import { Link } from "react-router-dom";
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   "& .MuiDialogContent-root": {
@@ -78,7 +79,7 @@ export default function AppointmentDialog({ open, setOpen, data }) {
             </div>
           </div>
           <Typography gutterBottom sx={{ p: 2, fontSize: "16px" }}>
-            <div class="d-flex align-items-start justify-content-between flex-row">
+            <div className="d-flex align-items-start justify-content-between flex-row">
               <div>
                 <h4>Date</h4>
                 <p>{data.date}</p>
@@ -115,6 +116,14 @@ export default function AppointmentDialog({ open, setOpen, data }) {
               <h4>Details</h4>
               <p>{data.details}</p>
             </div>
+            {data.status === "Accepted" && (
+              <div>
+                <h4>Meeting Link</h4>
+                <Link to="/meeting?room=general">
+                  {window.location.origin}/meeting?room=general
+                </Link>
+              </div>
+            )}
           </Typography>
         </DialogContent>
       </BootstrapDialog>
