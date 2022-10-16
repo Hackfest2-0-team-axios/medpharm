@@ -1,6 +1,6 @@
 .feed_post_container {
   background: #fff;
-  height: 120vh;
+  height: 100%;
   overflow-y: auto;
   overflow-x: hidden;
 }
